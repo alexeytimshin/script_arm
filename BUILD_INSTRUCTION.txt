@@ -1,0 +1,7 @@
+Для запуска сборки необходимо:
+1. Создать пользователя builder
+# useradd builder
+2. Установить hasher и добавить пользователя в группу hasher
+# hasher-useradd builder
+3. Запустить скрипт №1
+# bash +x ./1_make_image.sh
