@@ -21,5 +21,5 @@ cd $QEMU_LINUX_SOURCE
 #сборка ядра под QEMU
 make KERNEL=$KERNEL ARCH=$ARCH $CONFIG_QEMU
 sed -i 's/^CONFIG_LOCALVERSION_AUTO.*/CONFIG_LOCALVERSION_AUTO=n/' .config
-sed -i 's/^CONFIG_LOCALVERSION=.*/CONFIG_LOCALVERSION="-rpi-alt1"/' .config
+sed -i 's/^CONFIG_LOCALVERSION="".*/CONFIG_LOCALVERSION="-udv-ifw"/' .config
 make -j$(nproc) KERNEL=$KERNEL ARCH=$ARCH Image
