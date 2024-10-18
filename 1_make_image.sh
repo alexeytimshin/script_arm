@@ -86,7 +86,7 @@ umount $BUILDDIR/$MOUNTPOINT
 cd $BUILDDIR
 
 #вызов скрипта сборки образа через hasher
-sudo -u builder bash $BUILDDIR/3_hasher.sh
+bash $BUILDDIR/3_hasher.sh
 
 #сборка rootfs в архив
 cd $CHROOT_DIR
